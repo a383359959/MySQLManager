@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+body {
+    color:#4f6b72;
+    padding:0;
+    margin:0;
+	background:#fff; font-size:14px; font:12px/1.5 '微软雅黑',tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif; line-height:150%; margin:0; padding-bottom:20px;color:#404040; line-height:30px;
+}
+
+a,a:visited {
+    text-decoration:none;
+    color:#4f6b72;
+    border-bottom:1px dotted #CCC;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+table {
+    border:1px solid #C1DAD7;
+    border-collapse:collapse;
+}
+
+th {
+    background:#d6eef0;
+    padding:5px;
+}
+
+td {
+    padding:3px 5px 3px 10px;
+    vertical-align:top;
+}
+
+dl#template_maps dt {
+    font-size:16px;
+    padding:0;
+    padding-top:55px;
+    margin:10px 0 10px 0;
+}
+
+dl#template_maps dd {
+    padding:0;
+    padding-bottom:20px;
+    margin:0;
+    margin-bottom:30px;
+    border-bottom:1px dashed #CCC;
+}
+
+#nav {
+    padding:10px;
+}
+
+#nav ul {
+    padding:0;
+    margin:0;
+    margin-bottom:15px;
+    list-style:none; border:none;     color:#4f6b72; font-size:12px;
+}
+
+#nav ul li {
+    padding-left:28px;
+    margin-bottom:3px;
+    background:url("http://www.ecshop.com/template_tutorial/images/parent.gif") no-repeat 17px center;
+}
+
+#nav ul li.parent {
+    font-weight:bold;
+    padding-left:10px;
+    background:none;
+    margin-bottom:3px;
+}
+
+#nav ul li.child {
+    padding-left:38px;
+    background:url("http://www.ecshop.com/template_tutorial/images/child.gif") no-repeat 27px center;
+}
+
+#nav ul li.child a {
+    color:#888;
+}
+
+.menu {
+    
+    background:#eee;
+    height:38px; line-height:38px;
+ 
+ padding:0 30px;
+}
+
+.menu h3 {
+	text-align:center;
+    font-size:16px;
+    margin:0;
+    padding:0;
+}
+
+.menu a,
+.menu a:visited {
+    font-size:12px;
+    text-decoration:none;
+    color:#666;
+    padding:5px 10px;
+    height:20px;
+    background:#FFF;
+    border:1px solid #FFF;
+}
+
+.menu a:hover {
+    background:transparent;
+}
+
+.content {
+    padding:10px 30px;
+}
+
+.content ol li {
+    margin-bottom:8px;
+    line-height:1.5em;
+}
+
+
+
+ 
+  /*模块容器*/
+  .block{
+  width:960px; height:auto;
+}
+  .box{background:#f1f1f1; padding-bottom:2px; overflow:hidden;}
+  .box_1{border:1px solid #c5e4ff; background-color:#fff;}
+  .box_2{border:1px solid #c5e4ff; background:url(images/box_2Bg.gif) repeat-x top left;
+  background-color:#edf8fe;  overflow:hidden;
+  }
+  .boxCenterList{padding:8px;}
+  /*模块标题*/
+  h3{height:33px; line-height:33px; font-size:12px;  text-align:right;
+  padding:0 12px; font-weight:100;
+  }
+ textarea{border:1px solid #ccc; width:938px; padding:10px; height:100px;}
+ 
+ 
+ 
+ h1{ height:40px; line-height:40px; background:#4f81bd; color:#FFF; padding-left:20px; font-size:16px; margin-top:60px; }
+ ul{ border:1px solid #FFCC00; padding:5px 10px;}
+  ul strong{ color:#FF0000}
+  #tbox{width:58px; float:right; position:fixed; right:50px; bottom:15px;
+_position:absolute;
+_bottom:auto;
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+_margin-bottom:15px;
+}/*解决IE6下不兼容 position:fixed 的问题*/
+#gotop{ width:58px; height:56px; background:url(../images/icon.png) no-repeat; display:block;}
+#gotop{ background-position:0 -118px;} 
+#gotop:hover{ background-position:0 -59px;}
+.a{ display:block; height:30px; line-height:30px; background:#2d96e9; text-decoration: none; text-align: center; color:#FFFFFF; border-bottom:2px solid #fff}
+.a:hover{ background:#4f81bd}
+.b{ background:#4f81bd  }
+  .blank{height:10px; line-height:10px; clear:both; visibility:hidden;}
+.share { float:left}
+.share a{ text-decoration:none; border:none}
+.share  dl{ float:left; line-height:22px; padding-right:10px;}
+.share div{ float:left; padding-top:11px;}
