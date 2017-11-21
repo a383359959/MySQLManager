@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MySQL表结构</title>
+		<link href="template/style.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body>
+		<div class="menu">
+			<h3><?php echo $config['DB_NAME']; ?> 数据库结构说明</h3>
+		</div>
+		<div class="content">
+		<?php
+			foreach($tables as $key => $value){
+				$index = $key + 1;
+				$field = getField($value['Name']);
+				// print_r($field);
+		?>
+			<h4><?php echo $index; ?>、<?php echo $value['Name']; ?><?php echo !empty($value['Comment']) ? '（备注：'.$value['Comment'].'）' : '' ?></h4>
+			<table width="100%" border="1" cellpadding="0" cellspacing="0">
+				<tr style="background:#F1F1F1;">
+					<th style="width:10%">字段</th>
+					<th style="width:10%">类型</th>
+					<th style="width:10%">Null / 主键</th>
+					<th>注释</th>
+				</tr>
+				<?php
+					foreach($field as $k => $v){
+				?>
+				<tr>
+					<td><?php echo $v['Field']; ?></td>
+					<td><?php echo $v['Type']; ?></td>
+					<td><?php echo ($v['Null'] == 'YES' ? '是' : '否') ?> / <?php echo (!empty($v['Key']) ? '是' : '')?></td>
+					<td><?php echo $v['Comment']; ?></td>
+				</tr>
+				<?php
+					}
+				?>
+			</table>
+		<?php
+			}
+		?>
+		</div>
+	</body>
+</html>
